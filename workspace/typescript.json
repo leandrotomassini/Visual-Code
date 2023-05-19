@@ -46,4 +46,30 @@
 		],
 		"description": "React Context Index file"
 	},
+	"React custom reducer": {
+		"prefix": "reactcontext-reducer",
+		"body": [
+			"import { ${1:Name}State } from './';",
+			"",
+			"type ${1:Name}ActionType =",
+			"    | { type: '[${1:Name}] - ${2:ActionName}' }",
+			"",
+			"",
+			"export const $3${1:Name}Reducer = (state: ${1:Name}State, action: ${1:Name}ActionType): ${1:Name}State => {",
+			"",
+			"    switch (action.type) {",
+			"        case '[${1:Name}] - ${2:ActionName}':",
+			"            return {",
+			"                ...state,",
+			"            }",
+			"",
+			"        default:",
+			"            return state;",
+			"    }",
+			"",
+			"",
+			"}"
+		],
+		"description": "React custom context reducer"
+	},
 }
