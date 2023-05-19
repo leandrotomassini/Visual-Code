@@ -21,6 +21,19 @@
 		],
 		"description": "Arrow function"
 	},
+	"Switch case": {
+		"prefix": "switchcase",
+		"body": [
+			"switch ($1) {",
+			"    case $2:",
+			"        break;",
+			"",
+			"    default:",
+			"        break;",
+			"}",
+		],
+		"description": "Switch case"
+	},
 	"React Context Index file": {
 		"prefix": "react-context-index",
 		"body": [
