@@ -87,4 +87,11 @@
 		],
 		"description": "React Custom provider"
 	},
+	"Crear next/link": {
+		"prefix": "nextlink",
+		"body": [
+			"import NextLink from 'next/link';",
+		],
+		"description": "Crear next link"
+	}
 }
