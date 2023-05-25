@@ -15,22 +15,36 @@
 	"Component React": {
 		"prefix": "raaa",
 		"body": [
-			"import { FC } from 'react';",
 			"",
-			"interface Props {",
-			"    $2",
-			"}",
-			"",
-			"",
-			"export const $1:FC<Props> = ($3) => {",
+			"const $1 = () => {",
 			"    return (",
 			"        <>",
-			"          $4",
+			"          $2",
 			"        </>",
 			"    )",
 			"}",
+			"",
+			"",
+			"export default $1",
 		],
 		"description": "React component"
+	},
+	"Next server Side Props": {
+		"prefix": "next-server-side-props",
+		"body": [
+			"import { GetServerSideProps } from 'next';",
+			"",
+			"export const getServerSideProps: GetServerSideProps = async (ctx) => {",
+			"    const {data} = await",
+			"",
+			"    return {",
+			"        props: {",
+			"",
+			"        }",
+			"    }",
+			"}",
+		],
+		"description": "Next server Side Props"
 	},
 	"Arrow function": {
 		"prefix": "flee",
@@ -87,11 +101,4 @@
 		],
 		"description": "React Custom provider"
 	},
-	"Crear next/link": {
-		"prefix": "nextlink",
-		"body": [
-			"import NextLink from 'next/link';",
-		],
-		"description": "Crear next link"
-	}
 }
